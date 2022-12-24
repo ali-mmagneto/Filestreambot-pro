@@ -10,19 +10,19 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("maintainers😎"))
+@StreamBot.on_message(filters.regex("Bot Sahibi😎"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Made By [GreyMatter's Bot](https://t.me/GreyMatter_Bots)",
+                    text="Beni Yapan [:d](https://t.me/mmagneto)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Owner💻", url=f"https://t.me/GreyMatter_Owner")
+                                InlineKeyboardButton("Owner💻", url=f"https://t.me/mmagneto")
                             ]
                         ]
                     ),
@@ -30,19 +30,19 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
             
          
-@StreamBot.on_message(filters.regex("Subscribe ❤️"))
+@StreamBot.on_message(filters.regex("Abone Ol ❤️"))
 async def follow_user(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<B>HERE'S THE SUBSCRIBE LINK</B>",
+                    text="<B>Abone Ol</B>",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Subscribe ❤️", url=f"https://youtube.com/c/GreyMattersBot")
+                                InlineKeyboardButton("Abone Ol ❤️", url=f"https://t.me/mmagneto3")
                             ]
                         ]
                     ),
@@ -94,11 +94,11 @@ async def stats(bot, update):
   memory = psutil.virtual_memory().percent
   disk = psutil.disk_usage('/').percent
   botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
-            f'<b>Total disk space:</b> {total}\n' \
-            f'<b>Used:</b> {used}  ' \
-            f'<b>Free:</b> {free}\n\n' \
-            f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
-            f'<b>Down:</b> {recv}\n\n' \
+            f'<b>Tüm Disk Kapasitesi:</b> {total}\n' \
+            f'<b>Kullanılan:</b> {used}  ' \
+            f'<b>Boş:</b> {free}\n\n' \
+            f'📊Veri Kullanımk📊\n<b>Upload:</b> {sent}\n' \
+            f'<b>İndirme:</b> {recv}\n\n' \
             f'<b>CPU:</b> {cpuUsage}% ' \
             f'<b>RAM:</b> {memory}% ' \
             f'<b>Disk:</b> {disk}%'
