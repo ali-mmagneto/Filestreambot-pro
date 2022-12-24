@@ -55,7 +55,7 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://telegra.ph/file/68259e3c723b935e22e69.jpg",
+                photo="https://telegra.ph/file/a995c0f459caa66f8196e.jpg",
                 caption="<i>Beni Kullanmak için kanalıma katıl 🔐</i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -76,7 +76,7 @@ async def start(b, m):
             return
     await StreamBot.send_photo(
         chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
+        photo ="https://telegra.ph/file/a995c0f459caa66f8196e.jpg",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nBana Video At sana link atayım!',
         reply_markup=buttonz)
 
@@ -103,7 +103,7 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await StreamBot.send_photo(
                 chat_id=message.chat.id,
-                photo="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
+                photo="https://telegra.ph/file/a995c0f459caa66f8196e.jpg",
                 Caption="**Beni Kullanmak için kanalıma katıl!**\n\n__Katıl ya da git__",
                 reply_markup=InlineKeyboardMarkup(
                     [
