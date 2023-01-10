@@ -1,6 +1,6 @@
 
 class InvalidHash(Exception):
-    message = "Invalid hash"
+    message = "https://t.me/disneyplustur ve https://t.me/mmagneto3"
 
 class FIleNotFound(Exception):
-    message = "File not found"
+    message = "Dosya Bulunamadı"
